@@ -1,12 +1,38 @@
 {
-  "volume": {
+    // 1. GPS
+  "locationMode": "null,off,device,battery,high"
+    "volume": {
+    // 2. ALARM VOLUME
+    "alarm": "null or integer (0-7)",
+    // 3. NOTIFICATION VOLUME
     "notification": "null or integer (0-7)",
+    // 4. MEDIA VOLUME
     "media": "null or integer (0-15)",
+    // 5. RINGER VOLUME
+    "ringer": "null or integer (0-7)",
+    // 6. DO NOT DISTURB
     "dnd": "null, all (with quotes to turn off dnd), priority (with quotes for priority only), alarms (with quotes for alarms only), or none (with quotes for total silence)"
-  },
-  "wifiOn": "null or boolean",
-  "bluetoothOn": "null or boolean",
-  "screenRotationOn": "null or boolean",
+    },
+  "net": {
+    // 7. WIFI
+    "wifiOn": "null or boolean",
+    // 8. BLUETOOTH
+    "bluetoothOn": "null or boolean",
+    // 9. SCREEN ROTATION
+    "screenRotationOn": "null or boolean",
+    // 10. DATA SYNC
+    "dataSync": "null or boolean",
+    // 11. MOBILE DATA
+    "mobileData": "null or boolean",
+    }
+  "display": {
+    // 12. DISPLAY TIMEOUT
+    "timeout": "null or integer (in seconds)",
+    // 13. DISPLAY BRIGHTNESS
+    "brightness":  "null or integer (0-255)",
+    // 14. AUTO-BRIGHTNESS
+    "autoBright":  "null or boolean",
+    
   "enter": {
     "profilesToDisable": ["NameOfProfile1", "NameOfProfile2", "..."],
     "profilesToEnable": [],
