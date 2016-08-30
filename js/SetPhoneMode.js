@@ -46,35 +46,33 @@ if (modeConfig.enter.profilesToEnable.length > 0) {
 if (modeConfig.locationMode !== null) { performTask('LocationMode', 10, modeConfig.locationMode, ''); }
 
 /*
-// 2. BLUETOOTH
-if (modeConfig.net.bluetoothOn !== null) { setBT(modeConfig.bluetoothOn); }
-// 3. WI-FI
-if (modeConfig.net.wifiOn !== null) { setWifi(modeConfig.net.wifiOn); }
-// 4. DATA-SYNC
-if (modeConfig.net.dataSync !== null) { setAutoSync(modeConfig.net.dataSync); }
-
-// 5. DISPLAY TIMEOUT
-if (modeConfig.screen.timeout !== null) { displayTimeout(modeConfig.screen.timeout); }
-
-// 6. ALARM VOLUME
+// 2. ALARM VOLUME
 if (Number.isInteger(modeConfig.volume.alarm)) { alarmVol(modeConfig.volume.alarm, false, false); }
-// 7. MEDIA VOLUME
-if (Number.isInteger(modeConfig.volume.media)) { mediaVol(modeConfig.volume.media, false, false); }
-// 8. RINGTONE VOLMUME
-if (Number.isInteger(modeConfig.volume.ringer)) { ringerVol(modeConfig.volume.ringer, false, false); }
-// 9. NOTIFICATION VOLUME
+// 3. NOTIFICATION VOLUME
 if (Number.isInteger(modeConfig.volume.notification)) { notificationVol(modeConfig.volume.notification, false, false); }
-
-// 10. DISPLAY BRIGHTNESS
-if (Number.isInteger(modeConfig.screen.brightness)) { performTask('DisplayBrightness', 10, modeConfig.screen.brightness, ''); }
-// 11. AUTO-BRIGHTNESS
-if (modeConfig.screen.autoBright !== null) { displayAutoBright(modeConfig.screen.autoBright); }
-// 12. SCREEN ROTATION
-if (modeConfig.screen.screenRotationOn !== null) { performTask('DisplayRotate', 10, modeConfig.screen.screenRotationOn, ''); }
-// 13. DO NOT DISTURB
+// 4. MEDIA VOLUME
+if (Number.isInteger(modeConfig.volume.media)) { mediaVol(modeConfig.volume.media, false, false); }
+// 5. RINGER VOLUME
+if (Number.isInteger(modeConfig.volume.ringer)) { ringerVol(modeConfig.volume.ringer, false, false); }
+// 6. DO NOT DISTURB
 if (modeConfig.volume.dnd !== null) { performTask('DoNotDisturb', 10, modeConfig.volume.dnd, ''); }
-// 14. MOBILE DATA
+// 7. WI-FI
+if (modeConfig.net.wifiOn !== null) { setWifi(modeConfig.net.wifiOn); }
+// 8. BLUETOOTH
+if (modeConfig.net.bluetoothOn !== null) { setBT(modeConfig.bluetoothOn); }
+// 9. SCREEN ROTATION
+if (modeConfig.screen.screenRotationOn !== null) { performTask('DisplayRotate', 10, modeConfig.screen.screenRotationOn, ''); }
+// 10. DATA-SYNC
+if (modeConfig.net.dataSync !== null) { setAutoSync(modeConfig.net.dataSync); }
+// 11. MOBILE DATA
 if (modeConfig.net.mobileData !== null) { performTask('MobileData', 10, modeConfig.net.mobileData, ''); }
+// 12. DISPLAY TIMEOUT
+if (modeConfig.screen.timeout !== null) { displayTimeout(modeConfig.screen.timeout); }
+// 13. DISPLAY BRIGHTNESS
+if (Number.isInteger(modeConfig.screen.brightness)) { performTask('DisplayBrightness', 10, modeConfig.screen.brightness, ''); }
+// 14. AUTO-BRIGHTNESS
+if (modeConfig.screen.autoBright !== null) { displayAutoBright(modeConfig.screen.autoBright); }
+
 */
 
 if (modeConfig.enter.tasksToRun.length > 0) {
