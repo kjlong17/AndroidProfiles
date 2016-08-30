@@ -44,12 +44,11 @@ if (modeConfig.enter.profilesToEnable.length > 0) {
 
 //  1. GPS
 if (modeConfig.locationMode !== null) { performTask('LocationMode', 10, modeConfig.locationMode, ''); }
-
-/*
 // 2. ALARM VOLUME
 if (Number.isInteger(modeConfig.volume.alarm)) { alarmVol(modeConfig.volume.alarm, false, false); }
 // 3. NOTIFICATION VOLUME
 if (Number.isInteger(modeConfig.volume.notification)) { notificationVol(modeConfig.volume.notification, false, false); }
+/*
 // 4. MEDIA VOLUME
 if (Number.isInteger(modeConfig.volume.media)) { mediaVol(modeConfig.volume.media, false, false); }
 // 5. RINGER VOLUME
