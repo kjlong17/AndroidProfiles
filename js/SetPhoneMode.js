@@ -45,6 +45,7 @@ if (modeConfig.enter.profilesToEnable.length > 0) {
 //  1. GPS
 if (modeConfig.locationMode !== null) { performTask('LocationMode', 10, modeConfig.locationMode, ''); }
 
+/*
 // 2. BLUETOOTH
 if (modeConfig.net.bluetoothOn !== null) { setBT(modeConfig.bluetoothOn); }
 // 3. WI-FI
@@ -74,6 +75,7 @@ if (modeConfig.screen.screenRotationOn !== null) { performTask('DisplayRotate', 
 if (modeConfig.volume.dnd !== null) { performTask('DoNotDisturb', 10, modeConfig.volume.dnd, ''); }
 // 14. MOBILE DATA
 if (modeConfig.net.mobileData !== null) { performTask('MobileData', 10, modeConfig.net.mobileData, ''); }
+*/
 
 if (modeConfig.enter.tasksToRun.length > 0) {
   for (var t = 0; t < modeConfig.enter.tasksToRun.length; t++) {
